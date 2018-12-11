@@ -57,7 +57,7 @@ For example, I configured it to send me the time it takes for two different path
 This bot is called by a IFTTT every time I save a song on Spotify.
 It retrieves the lyrics from MusixMatch and sends it to me
 
-![](images/Screenshot_20181211-124205.png)
+![](images/Screenshot_20181211-124204.png)
 
 ### Backend
 
