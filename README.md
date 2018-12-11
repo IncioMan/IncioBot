@@ -33,7 +33,7 @@ This video shows the bot in action:
 <a href="https://www.youtube.com/watch?v=A6EHIzWpi_E&list=UUVtdSuG76pmr0tgl--oJcCQ&index=4" target="_blank"><img src="http://img.youtube.com/vi/A6EHIzWpi_E/0.jpg"
 alt="Video link" width="240" height="180" border="10" /></a>
 
-#### FifaBot UI
+##### FifaBot UI
 
 [Vaadin](https://vaadin.com/) has been used to develop a Web Application to visualize graphs and statistics of the matches registered.
 
@@ -50,14 +50,14 @@ The advantages from just using Google Maps is that I do not have to reveal my ho
 
 For example, I configured it to send me the time it takes for two different paths so I can get to decide the one I want to go for:
 
-![](images/Screenshot_20181211-124148.PNG)
+![](images/Screenshot_20181211-124148.png)
 
 ### LyricsBot
 
 This bot is called by a IFTTT every time I save a song on Spotify.
 It retrieves the lyrics from MusixMatch and sends it to me
 
-![](images/Screenshot_20181211-124205.PNG)
+![](images/Screenshot_20181211-124205.png)
 
 ### Backend
 
