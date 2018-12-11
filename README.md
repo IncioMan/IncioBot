@@ -63,7 +63,7 @@ It retrieves the lyrics from MusixMatch and sends it to me
 
 #### Overall structure
 
-This graph shows the internal structure and mechanism implemented using AOP and Spring for how logs work and how a request is handled :
+This graph shows the internal structure and mechanism implemented using AOP and Spring for how logs work and how a request is handled (FuelBot is also present but not explained here):
 
 ![](images/workflow.png)
 
@@ -80,7 +80,7 @@ This image shows the core of the schema, which is mostly related to the function
 ## Usage
 
 The project needs to be build using maven
-In order to build the frontend project, a vaadin license is needed (it can be place in the root of the project, for example)
+In order to build the frontend project, a vaadin license is needed (it can be placed in the root of the project, for example)
 
 Run this command in the root folder
 
