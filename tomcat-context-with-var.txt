@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--><!-- The contents of this file will be loaded for each web application --><Context>
+ 
+    <!-- Default set of monitored resources. If one of these changes, the    -->
+    <!-- web application will be reloaded.                                   -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+ 
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="" />
+    -->
+ 
+    <!-- Uncomment this to enable Comet connection tacking (provides events
+         on session expiration as well as webapp lifecycle) -->
+    <!--
+    <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
+    -->
+   
+    <Environment name="bot.token" value="251141897:AAGe_wU_0BVDvVQE0Lta4zFVv05et2xcuEQ"
+         type="java.lang.String" override="false"/>
+        
+    <Environment name="lyrics.bot.token" value="263616324:AAERHlRkwz5PXrRaygVXPGzv2_kasq5GcjI"
+         type="java.lang.String" override="false"/>
+        
+    <Environment name="fifa.bot.token" value="280408844:AAGY4zBU2W9kuY00LV6Ty7VElafv-77OzAc"
+         type="java.lang.String" override="false"/>
+        
+    <Environment name="DATABASE_URL" value="postgres://postgres:postgresql@localhost:5432/euei_fifa"
+         type="java.lang.String" override="false"/>
+
+<!-- 	<Environment name="DATABASE_URL" value="ppostgres://urlljusqdsjtib:XqsbudYm2K8psRemcrTcGXmSG0@ec2-54-235-120-32.compute-1.amazonaws.com:5432/dbrp8co3cmh658" -->
+<!--          type="java.lang.String" override="false"/> -->
+
+        
+    <Environment name="my.chat.id" value="92383009"
+         type="java.lang.String" override="false"/>
+        
+    <Environment name="lyrics.my.chat.id" value="92383009"
+         type="java.lang.String" override="false"/>
+             
+      <Environment name="girlfriend.chat.id" value="104561824"
+         type="java.lang.String" override="false"/>
+        
+     <Environment name="musixmatch.token" value="d65a12cfcca8746143665566ed671244"
+         type="java.lang.String" override="false"/>
+        
+     <Environment name="google.maps.bot.token" value="135962774:AAERF3vjj1gfrtzuRSS5GJOR-SaNEqe7RKY"
+         type="java.lang.String" override="false"/>
+         
+     <Environment name="google.maps.api.key" value="AIzaSyDEmRsIiuO__ylBhl8leUGmf5ZmR8JHrSs"
+         type="java.lang.String" override="false"/>
+         
+     <Environment name="app.url" value="https://incio-bot.herokuapp.com/"
+         type="java.lang.String" override="false"/>
+        
+     <Environment name="grande.emilia.position" value="44.647042,10.849600"
+         type="java.lang.String" override="false"/>
+        
+     <Environment name="marzaglia.position" value="44.650706,10.809002"
+         type="java.lang.String" override="false"/> 
+         
+      <Environment name="work.position" value="44.657907,10.913540"
+         type="java.lang.String" override="false"/>
+        
+      <Environment name="freeway.position" value="44.672324, 10.917868"
+         type="java.lang.String" override="false"/>
+         
+      <Environment name="freeway.exit.position" value="44.656754, 10.857124"
+         type="java.lang.String" override="false"/>
+         
+      <Environment name="home.position" value="44.652689, 10.787173"
+         type="java.lang.String" override="false"/>
+      
+     <Environment name="INCIOBOT_BACKEND_ADDRESS" value="https://incio-bot.herokuapp.com/"
+      type="java.lang.String" override="false"/>
+         
+<!--         local backend -->
+<!--        <Environment name="INCIOBOT_BACKEND_ADDRESS" value="http://127.0.0.1:8081/inciobot.bot_backend/" -->
+<!--         type="java.lang.String" override="false"/> -->
+       
+        
+</Context>

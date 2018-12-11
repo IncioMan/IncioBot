@@ -1,0 +1,34 @@
+API Documentation. (GET is the default method)
+
+FifaApi:
+
+/fifa-api/status/
+/fifa-api/statistics/matchdistribution/
+/fifa-api/statistics/matchdistribution/week-user/
+/fifa-api/statistics/matchdistribution/week-distr/ [POST the filter] 
+/fifa-api/statistics/matchdistribution/week-distr/filter
+/fifa-api/statistics/matchdistribution/week-distr/result
+/fifa-api/statistics/matchdistribution/week-distr/goals
+
+/users/active/usernames
+/users/ [optional param: active (boolean). return active players only]
+/statistics/player/ [required params: username and TimeRangeAggr (MONHT, WEEK)]
+/statistics/opponents/ [return list of challengeReport for that challenge between two users. Required params: opponent1 and opponent2 and timerangeaggr]
+/statistics/opponents/generalstats/ [required param: opponent1 and opponent2 as usernames]
+
+/fifa-api/matches/ [possible params: username, email of player, id of the match, limit as nuumber of matches. 
+The call returns an array of matches. If nothing is specified all matches are returned]
+
+/fifa-api/matches/random/withcomments
+/fifa-api/matches/random/withcomments/simpleformat
+/fifa-api/matches/size [username as param, query string]
+
+/fifa-api/general-stats/ [possible params: username or email of player]
+
+FuelApi:
+
+
+/fuel/20112017/ [POST the refueling]
+/fuel/month/price/
+/fuel/month/distance/
+/fuel/month/distance-quantity/

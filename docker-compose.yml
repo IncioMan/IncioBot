@@ -1,0 +1,36 @@
+fifa-website:
+   build: ./fifa-website
+   ports:
+     - "8887:80"
+   links:
+     - backend:backend
+   dns: 8.8.8.8
+   
+fifa-gui:
+   build: ./fifa-bot-gui
+   ports:
+     - "8888:8080"
+     - "8000:8000"
+   links:
+     - backend:backend
+   dns: 8.8.8.8
+backend:
+   build: ./bot-back-end
+   ports:
+     - "8889:8080"
+     - "8001:8000"
+   links:
+     - db:database
+   dns: 8.8.8.8
+   
+db:
+  build: ./db
+  ports:
+    - "5433:5432"
+  environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_DB=euei_fifa
+    - POSTGRES_PASSWORD=postgresql
+
+    
+    
